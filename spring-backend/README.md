@@ -77,7 +77,7 @@ CMD ["java", "-jar", "target/spring-backend-v1.jar"]
 ```
 # Docker Build command fire for create Docker Images.(Note :- Dockerfile should present in same dir where all file of backend is present)
 ```
-docker build -t Shan20000/angular:angular_backend .
+docker build -t soham08022001/angular:angular_backend .
 ```
 ```
 docker images

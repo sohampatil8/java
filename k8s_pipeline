@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_REPO = 'shan20000/angular'
+        DOCKERHUB_REPO = 'soham08022001/angular'
     }
 
     stages {
         stage('Pull Source Code') {
             steps {
-                git 'https://github.com/Shantanu20000/Angular_java_Project.git'
+                git 'https://github.com/soham08022001/Angular_java_Project.git'
             }
         }
 

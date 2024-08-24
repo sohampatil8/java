@@ -104,7 +104,7 @@ vim ./angular-frontend/src/app/services/worker.service.ts
 ```
 # Docker Build command fire for create Docker Images.(Note :- Dockerfile should present in same dir where all file of backend is present)
 ```
-docker build -t Shan20000/angular:angular_frontend .
+docker build -t soham08022001/angular:angular_frontend .
 ```
 ```
 docker images

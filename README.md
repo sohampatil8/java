@@ -59,7 +59,7 @@ vim ./spring-backend/src/main/resources/application.properties
 ```
 # Docker Build command fire for create Docker Images.(Note :- Dockerfile should present in same dir where all file of backend is present)
 ```
-docker build -t Shan20000/angular:angular_backend .
+docker build -t soham08022001/angular:angular_backend .
 ```
 ```
 docker images
@@ -74,7 +74,7 @@ vim ./angular-frontend/src/app/services/worker.service.ts
 # Important:- 
 1. In the Case of K8s,We mention our Backend service name in yaml file that name must mention in our Frontend image at the place of localhost then create image & push it on DockerHub
 ```
-docker build -t Shan20000/angular:angular_frontend .
+docker build -t soham08022001/angular:angular_frontend .
 ```
 ```
 docker images
@@ -92,8 +92,8 @@ docker login
 ```
 # Push docker images on DockerHub (Note :- Your repository should be present on your DockerHub)
 ```
-docker push shan20000/angular:angular_frontend
-docker push shan20000/angular:angular_backend
+docker push soham08022001/angular:angular_frontend
+docker push soham08022001/angular:angular_backend
 ```
 # We have to write YAML file K8s Deployment.
 
@@ -109,12 +109,12 @@ metadata:
 spec:
   containers:
   - name: angular-frontend
-    image: shan20000/angular:angular_frontend
+    image: soham08022001/angular:angular_frontend
     ports:
     - containerPort: 80
       protocol: TCP
   - name: angular-backend
-    image: shan20000/angular:angular_backend
+    image: soham08022001/angular:angular_backend
     ports:
     - containerPort: 8080
       protocol: TCP
@@ -166,9 +166,7 @@ Steps:-
   2. We gets 4 NS that Ns we have put in Hostinger as you know it.
   3. Create Record with SubDomain in it (We use here "angular.ocean-learner.cloud") with A Record or CName Record
   4. In case we use A Record that time we use alias. and select our region and loadbalancer
-# Now We have hit our DNS On Site.
-![angular result](https://github.com/Shantanu20000/Angular_java_Project/assets/163661534/e549e5e7-d0a8-405a-a250-f61f125f20ff)
-# Booommmm!! It's Works........
+
 
 
 
